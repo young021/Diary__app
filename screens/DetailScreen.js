@@ -33,8 +33,8 @@ export default class DetailScreen extends React.Component {
                                 제목 : {this.post.title}
                             </Text>
                         </View>
-                        
-                        {this.post.imageUri ? <Image source={{ uri: this.post.imageUri }} style={{ width: 100, height: 100 }} /> : null}
+
+                        {this.post.imageUri ? <Image source={{ uri: this.post.imageUri }} style={{ width: 170, height: 150,  marginLeft : 50 }} /> : null}
                         <View style={styles.detailbox}> 
                             <Text style={styles.detailcontent}>
                                 내용 : {this.post.content}
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
         paddingLeft:20,
     },
     detailtitle:{
-        fontSize: 40,
+        fontSize: 40, 
     },
     detailcontent:{
         fontSize : 20,

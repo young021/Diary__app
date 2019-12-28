@@ -107,7 +107,7 @@ _getData = async () => {
                               </TouchableOpacity>
                           )
                       }}
-                      keyExtractor = {(item, index) => {return `$(index)`}}  />
+                      keyExtractor={(item, index) => index.toString()}  />
                 </ScrollView>
             </SafeAreaView>
         );
